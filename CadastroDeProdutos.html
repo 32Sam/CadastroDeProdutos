@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Itens</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: whitesmoke;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: bottom;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .hd {
+            background-color: #5484b4;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+        }
+        .hdobj {
+            color: white;
+            font-size: 15px;
+            margin-left: 20px;
+            margin-right: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .ent {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #5484b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .ent:hover {
+            background-color: #4473a6;
+        }
+    </style>
+</head>
+<body>
+    <header class="hd">
+        <div class="hdobj">LOGO</div>
+        <div class="hdobj"><b>SÃO FRANCISCO</b></div>
+        <div class="ctt"></div>
+    </header>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do item">
+        </div>
+        <div class="form-group">
+            <label for="codigo_barras">Código de Barras:</label>
+            <input type="text" id="codigo_barras" name="codigo_barras" placeholder="Digite o código de barras">
+        </div>
+        <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+        </div>
+        <div class="form-group">
+            <label for="fornecedor">Fornecedor:</label>
+            <input type="text" id="fornecedor" name="fornecedor" placeholder="Digite o nome do fornecedor">
+        </div>
+        <div class="form-group">
+            <label for="informacoes_adicionais">Informações Adicionais:</label>
+            <textarea id="informacoes_adicionais" name="informacoes_adicionais" placeholder="Digite informações adicionais"></textarea>
+        </div>
+        <button class="ent">ENTER</button>
+    </div>
+</body>
+</html>
